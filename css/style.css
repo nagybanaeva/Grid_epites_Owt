@@ -1,0 +1,90 @@
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+    background: beige;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0 -30px;
+}
+
+p {
+    width: 100%;
+    padding: 10px;
+    border: solid 2px #4ea54c;
+    font-size: 16px;
+    background: #fff;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.one-second {
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.one-third {
+    float: left;
+    width: 33.33%;
+    padding: 0 30px;
+}
+
+.two-third {
+    float: left;
+    width: 66.66%;
+    padding: 0 30px;
+}
+
+.one-fourth {
+    float: left;
+    width: 25%;
+    padding: 0 30px;
+}
+
+.three-fourth {
+    float: left;
+    width: 75%;
+    padding: 0 30px;
+}
+
+.one-sixth {
+    float: left;
+    width: 16.66%;
+    padding: 0 30px;
+}
+
+.three-fifth {
+    float: left;
+    width: 60%;
+    padding: 0 30px;
+}
+
+.two-fifth {
+    float: left;
+    width: 40%;
+    padding: 0 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .one-second, .one-third, .two-third, .one-fourth, .three-fourth, .one-sixth, .three-fifth, .two-fifth {
+        width: 100%;
+        float: none;
+        position: relative;
+    }    
+}
